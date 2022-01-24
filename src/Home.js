@@ -1,32 +1,24 @@
 import React from "react";
 import "./style.css";
-import { Container,Row, col, Carousel } from "react-bootstrap";
+import { Container,Carousel } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.css';
-import slide1 from './assets/img/slide/Slide1.jpg';
-import slide2 from './assets/img/slide/Slide2.jpg';
-import slide3 from './assets/img/slide/slide3.jpg';
+
+
+
 
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Nav } from "react-bootstrap";
 import { faFacebookF,faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 //import DropdownButton from 'react-bootstrap/DropdownButton'
-import { Form } from "react-bootstrap";
-import { FormControl } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import {
-  Box,
-  
-  
-  Column,
-  FooterLink,
-  Heading,
-  } from "./FooterStyles";
+
+
+
 
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 import {faPhoneAlt, faMapPin} from '@fortawesome/free-solid-svg-icons';
 
@@ -67,6 +59,7 @@ class Home extends React.Component{
       src={require("./assets/img/logo.png")}
       width="150"
       height="75"
+      alt="brand"
       
       />
       
@@ -153,7 +146,7 @@ class Home extends React.Component{
     
     <Carousel.Caption>
       <h2>Welcome To</h2>
-      <img src={require("./assets/img/logo.png")} width="270px" height="270px"/>
+      <img alt="welcome" src={require("./assets/img/logo.png")} width="270px" height="270px"/>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={10000}>
@@ -313,50 +306,50 @@ class Home extends React.Component{
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box">
             
-            <h4 class="title"><a href="">New DSTV, OVHD and STAR satellite tv installation</a></h4>
+            <h4 class="title"><a href="#contact">New DSTV, OVHD and STAR satellite tv installation</a></h4>
             <p class="description">Our dish installations include decoders such as DSTV Explora, HD PVR and OVHD decoders </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             
-            <h4 class="title"><a href="">Mount LED TV wall brackets</a></h4>
+            <h4 class="title"><a href="#contact">Mount LED TV wall brackets</a></h4>
             <p class="description">Dont break your back trying to mount your precious LED TV, We will do it for you. Book a call out now or come to our store and we will supply you with our mounting brackets</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
           
-            <h4 class="title"><a href="">XtraView / third viewing installations</a></h4>
+            <h4 class="title"><a href="#contact">XtraView / third viewing installations</a></h4>
             <p class="description">XtraView is a cost effective and flexible solution which allows two XtraView capable DStv decoders to be linked together in one household, at the cost of a single subscription. Call us now or come to our offices and will install it for you</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             
-            <h4 class="title"><a href="">Extra TV point connections</a></h4>
+            <h4 class="title"><a href="#contact">Extra TV point connections</a></h4>
             <p class="description">Extra TV Points Installation setup is where by additional TV’s are connected to view the same picture being shown on the main TV room. This setup is mainly used on a house with many rooms and a TV is required in each every room. And also, in offices, hotels, and guest houses where Dstv decoders are being installed in a server room and all the TV’s are getting a feed from the same decoders. Contact us now for a quote.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
         
-            <h4 class="title"><a href="">Single view upgrades to extra view</a></h4>
+            <h4 class="title"><a href="#contact" >Single view upgrades to extra view</a></h4>
             <p class="description">Turn your single view Dstv decoder to an extra view and enjoy more entertaining sattelite TV with your family or business.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
           
-            <h4 class="title"><a href="">DSTV relocation and re-installation</a></h4>
+            <h4 class="title"><a href="#contact" >DSTV relocation and re-installation</a></h4>
             <p class="description">Are you relocating and need your DSTV reinstalled? We got you covered. We are masters in DSTV Installations and DSTV repairs. We are the most trusted DSTV Installers for DSTV relocations in South Africa.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 icon-box">
             
-            <h4 class="title"><a href="">DSTV Upgrades</a></h4>
+            <h4 class="title"><a href="#contact">DSTV Upgrades</a></h4>
             <p class="description">Upgrade your existing single view installation to an EXPLORA decoder By changing the LNB to a SMART LNB.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 icon-box">
             
-            <h4 class="title"><a href="">Repairs and Signal loss correction</a></h4>
+            <h4 class="title"><a href="#contact">Repairs and Signal loss correction</a></h4>
             <p class="description">Is your decoder struggling with signal loss or lost connection after a storm. Our highly trained technicians got your back. Give us a call</p>
           </div>
 
           <div class="col-lg-4 col-md-6 icon-box">
             
-            <h4 class="title"><a href="">DSTV Migration</a></h4>
+            <h4 class="title"><a href="#contact">DSTV Migration</a></h4>
             <p class="description">Dstv or OVHD satellite installation or DStv and looking to upgrade or migration? Give our local Technicians for assistance promptly.</p>
           </div>
         </div>
@@ -771,6 +764,7 @@ class Home extends React.Component{
 
 
 </section> */}
+<a href="#about" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 </main>  
 
@@ -782,7 +776,6 @@ class Home extends React.Component{
 
 
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <script src="../assets/vendor/purecounter/purecounter.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
